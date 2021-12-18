@@ -1,24 +1,28 @@
-import logo from './logo.svg';
 import './App.css';
+import { Routes, Route } from 'react-router-dom';
+import Row from 'react-bootstrap/Row';
+import { Fragment } from 'react';
+import CustomNav from './components/ui/CustomNav';
+import NewsPage from './components/pages/NewsPage';
+import Keywords from './components/pages/keywords';
+import AlertState from './components/context/alert/AlertState';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <AlertState>
+      <Fragment>
+        <Row className='header'>
+          <CustomNav />
+        </Row>
+
+        <Routes>
+          <Route path='/'></Route>
+          <Route path='/news' element={<NewsPage />}></Route>
+          <Route path='/keywords' element={<Keywords />}></Route>
+          <Route path='/about'></Route>
+        </Routes>
+      </Fragment>
+    </AlertState>
   );
 }
 

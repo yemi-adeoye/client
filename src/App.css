@@ -1,38 +1,134 @@
-.App {
-  text-align: center;
+nav {
+    padding: 15px 20px;
+    float: none;
+    margin-bottom: 1rem;
+    background-color: #fff;
+    border-radius: 2px;
+    border-bottom: 1px solid #999;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#root {
+    margin: 0;
+    padding: 0;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.shadow {
+    box-shadow: 1px 2px #000;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+/* reverse direction of nav bar items */
+
+.navbar-collapse {
+    flex-direction: row-reverse;
 }
 
-.App-link {
-  color: #61dafb;
+.header {
+    margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container {
+    margin: 0;
+}
+
+
+/* format the vertical links section */
+
+.side-nav,
+.aside {}
+
+.fixed {
+    position: fixed;
+    height: 100vh;
+    overflow-y: scroll;
+}
+
+.container-news {
+    display: grid;
+    grid-template-columns: 2fr 7fr 3fr;
+}
+
+.card {
+    border: none;
+}
+
+.card-header {
+    background-color: #fff;
+    font-size: 1.4rem;
+    padding-left: 0;
+}
+
+.card-text {
+    padding-top: 10px;
+    font-size: 1.2rem;
+    line-height: 1.6em;
+}
+
+.navbar {
+    margin: 0;
+}
+
+body {
+    background-color: #333;
+}
+
+h1 a {
+    text-decoration: none;
+}
+
+.head h1 {
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+
+.head {
+    border-bottom: 1px solid #999;
+}
+
+.head,
+.body {
+    padding: 2% 4%;
+}
+
+a {
+    color: #666
+}
+
+a:hover {
+    color: #000;
+}
+
+.nav a.nav-link:hover {
+    border-bottom: 1px solid #999;
+    border-top: 1px solid #999;
+    font-weight: bold;
+}
+
+.head span {
+    font-size: 0.8em;
+}
+
+.fas {
+    color: teal;
+}
+
+.story {
+    background-color: #fff;
+    border-radius: 4px;
+    margin: 5px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+}
+
+.body p {
+    font-size: 1.1em;
+    line-height: 1.8em;
+}
+
+.fa-times-circle {
+    color: #333;
+}
+
+.fa-times-circle:hover {
+    color: #f00;
 }
