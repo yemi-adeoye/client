@@ -20,7 +20,7 @@ const NavCustom = (props) => {
             className='nav-cs ubuntu ml-auto '
             aria-controls='basic-navbar-nav'
           >
-            <Nav.Link as={Link} to='/' id='home' onClick={onNavClick}>
+            <Nav.Link as={Link} to='/client' id='home' onClick={onNavClick}>
               home
             </Nav.Link>
 
