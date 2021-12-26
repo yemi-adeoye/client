@@ -20,7 +20,8 @@ const Keywords = () => {
 
   useEffect(() => {
     axios
-      .get('http://localhost:8000/news/keywords')
+      //.get('http://localhost:8000/news/keywords') development only
+      .get('https://evening-bastion-25872.herokuapp.com/news/keywords')
       .then((res) => {
         setKeywords(res.data.keywords);
       })
