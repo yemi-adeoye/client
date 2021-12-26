@@ -37,7 +37,10 @@ const Keywords = () => {
     const data = { keywords: newKeywords };
 
     axios
-      .post('http://localhost:8000/news/set-keywords', data)
+      .post(
+        'https://evening-bastion-25872.herokuapp.com/news/set-keywords',
+        data
+      )
       .then((res) => {
         setAlert('Keyword deleted successfully', 'success');
       })
@@ -67,7 +70,10 @@ const Keywords = () => {
       keywords.unshift(newWord);
       const data = { keywords };
       axios
-        .post('http://localhost:8000/news/set-keywords', data)
+        .post(
+          'https://evening-bastion-25872.herokuapp.com/news/set-keywords',
+          data
+        )
         .then((res) => {
           setAlert('Keyword added successfully', 'success');
         })

@@ -37,7 +37,7 @@ const NewsPage = () => {
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const url = `http://localhost:8000/news/business-hallmark`;
+    const url = `https://evening-bastion-25872.herokuapp.com/news/business-hallmark`;
     toggleLoading(); // sets loading to true so that spinner shows until response
 
     axios
@@ -60,7 +60,7 @@ const NewsPage = () => {
     e.preventDefault();
     window.scrollTo(0, 0);
     const paperTofetch = e.target.getAttribute('data-paper');
-    const url = `http://localhost:8000/news/${paperTofetch}`;
+    const url = `https://evening-bastion-25872.herokuapp.com/news/${paperTofetch}`;
     toggleLoading();
     axios
       .get(url)
