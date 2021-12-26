@@ -7,8 +7,6 @@ nav {
     border-bottom: 1px solid #999;
 }
 
-
-
 #root {
     margin: 0;
     padding: 0;
@@ -57,17 +55,26 @@ nav {
     .steps-container {
         grid-template-columns: 1fr;
     }
+    .banner {
+        font-size: 4em;
+    }
 }
 
 @media screen and (min-width:577px) and (max-width: 768px) {
     .steps-container {
         grid-template-columns: 1fr 1fr;
     }
+    .banner {
+        font-size: 7em;
+    }
 }
 
 @media screen and (min-width:769px) {
     .steps-container {
         grid-template-columns: 1fr 1fr 1fr;
+    }
+    .banner {
+        font-size: 10em;
     }
 }
 
@@ -76,8 +83,6 @@ nav {
     height: 100vh;
     overflow-y: scroll;
 }
-
-
 
 .container-news {
     display: grid;
