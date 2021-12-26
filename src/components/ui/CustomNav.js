@@ -36,10 +36,6 @@ const NavCustom = (props) => {
             >
               keywords
             </Nav.Link>
-
-            <Nav.Link as={Link} to='/about'>
-              about
-            </Nav.Link>
           </Nav>
         </Navbar.Collapse>
       </Navbar>

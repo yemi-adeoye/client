@@ -7,6 +7,10 @@ nav {
     border-bottom: 1px solid #999;
 }
 
+.banner {
+    font-size: 10em;
+}
+
 #root {
     margin: 0;
     padding: 0;
@@ -31,11 +35,43 @@ nav {
     margin: 0;
 }
 
+.number {
+    border-bottom: 1px solid #ccc;
+    display: block;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+}
+
 
 /* format the vertical links section */
 
-.side-nav,
-.aside {}
+.step {
+    background-color: #fff;
+    border-radius: 3px;
+}
+
+.steps-container {
+    display: grid
+}
+
+@media screen and (max-width: 576px) {
+    .steps-container {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media screen and (min-width:577px) and (max-width: 768px) {
+    .steps-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media screen and (min-width:769px) {
+    .steps-container {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+}
 
 .fixed {
     position: fixed;
